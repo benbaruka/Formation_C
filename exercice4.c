@@ -12,6 +12,7 @@ void main()
        
         printf("%d / %d = %d ", a ,b , a/b);
     }
+    // le resultat
     else{
         printf("le premier nombre est plus petit que le seconde!");
     }
