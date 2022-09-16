@@ -1,25 +1,26 @@
 #include <stdio.h>
-//Ce programme a pour objectif basique de résoudre une équation du premier degré de la forme ax+b=0, ou ‘a’ est inférieur à ‘b’ 
- void main (){
-    int a;
-    int b;
-    float res;
-    
-  
+#include<stdlib.h>
+#include<math.h>
+//Ce programme a pour objectif basique de résoudre une équation du premier degré de la forme ax+b=0,  
 
-    printf(" Pour la forme ax+b=0, entrez la valeur de a :"); scanf("%d", &a);
-    printf(" Pour la forme ax+b=0, entrez la valeur de b :"); scanf("%d", &b);
-    res = -b/a;
-    if(a>0){
+int main(){
+       float a,b,x;
+       printf("\n Entrez a: ", a);
+       scanf("%f", &a);
+
+       printf("\n Entrez b: ", b);
+       scanf("%f", &b);
+       x=-b/a;
+       if (a>0)
+       {
+        /* le test de a */
+         printf(" la solution est x = %f\n",x);
+
+       }
+       else{
+        printf("\n a est inferieur ou egale à 0");
+       }
+       
       
-        if(b>a){
-            printf("l'equation de la forme %dx+%d=0 a pour solution : x=%f", a, b , res );
-        }
-        else{
-            printf("ce programme ne resoud qu'une equation ou le terme a est inferieur à b");
-        }
-    }
-    else{
-        printf("a est inferieur à 0");
-    }
+       return 0;
 }
