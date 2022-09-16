@@ -3,7 +3,7 @@
 void main()
 {
     //declaration de la variable 
-    int nombre_saisi = 0;
+    int nombre_saisi;
     //l'utilisateur entre un nombre a l'ecran
     printf("Entrez un nombre:");
     scanf("%d", &nombre_saisi);
