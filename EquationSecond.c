@@ -17,8 +17,8 @@ racine_delta = sqrtf(delta);
 
 if(delta > 0.0){
  
-    x1=(-(b*b) -(racine_delta))/2*a;
-    x2=(-(b*b) +(racine_delta))/2*a;
+    x1=(-b -(racine_delta))/2*a;
+    x2=(-b +(racine_delta))/2*a;
 
     printf("solution x1=%.2f et x2=%.2f", x1,x2);
      
